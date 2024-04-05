@@ -21,6 +21,7 @@ export default function RootLayout({ children }) {
           {children}
         </div>
         <Footer />
+        <div id="modal-root-content"/>
       </body>
     </html>
   );

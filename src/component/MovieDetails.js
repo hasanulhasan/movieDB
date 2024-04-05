@@ -1,19 +1,18 @@
 'use client'
 import Image from 'next/image'
 
-const MovieDetails = ({movie, movieId}) => {
-  console.log(movie)
+const MovieDetails = ({movie}) => {
   const {id, title, backdrop_path, poster_path, overview, release_date, vote_average, vote_count} = movie
   return (
     <section>
         <div>
           <Image className="w-full object-cover max-h-[300px] lg:max-h-[500px]"
-            src={backdrop_path} alt="" />
+            src={backdrop_path} height={100} width={100} alt="" />
         </div>
 
         <div className="grid grid-cols-12 py-12 gap-8">
           <div className="col-span-2">
-            <Image src={poster_path} alt=""/>
+            <Image src={poster_path} height={100} width={100} alt=""/>
           </div>
           <div className="col-span-8">
             <h2 className="font-bold text-slate-300 text-2xl">{title}</h2>
