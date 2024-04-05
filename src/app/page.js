@@ -1,6 +1,13 @@
+"use client";
+import MovieList from "@/component/MovieList";
+import { getAllMovie } from "./data/data";
 
 export default function Home() {
+  const movieList = getAllMovie();
+
   return (
-    <h1>MovieDB Project</h1>
+    <div>
+      <MovieList movieList={movieList} />
+    </div>
   );
 }
