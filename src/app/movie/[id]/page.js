@@ -8,11 +8,7 @@ const MovieDetailsPage = ({params: {id}}) => {
   const movie = getMovieById(movieId);
   const allMovie = getAllMovie();
   const checkIsMovie = allMovie.filter(movie=> movie.id === movieId);
-
-  // allMovie.filter(movie=> movie.id === movieId)
-
-  console.log(checkIsMovie)
-  
+    
   return (
     <>
     {

@@ -2,6 +2,7 @@
 import Image from 'next/image'
 
 const MovieDetails = ({movie}) => {
+  console.log(movie)
   const {id, title, backdrop_path, poster_path, overview, release_date, vote_average, vote_count} = movie
   return (
     <section>
